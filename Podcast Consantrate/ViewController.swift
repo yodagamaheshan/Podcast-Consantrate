@@ -13,6 +13,12 @@ class ViewController: UIViewController {
     var randomNoForTheme:Int=0
     let backgroundColor=[#colorLiteral(red: 0.01680417731, green: 0.1983509958, blue: 1, alpha: 1),#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)]
     let cardBackColor=[#colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1),#colorLiteral(red: 0.9994240403, green: 0.9855536819, blue: 0, alpha: 1),#colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 1)]
+    
+    
+    var numberOfPairOfCards:Int{
+        //get eka witharak thiyenawanam "get" qla daanna oonama na
+        return (cardButtons.count+1)/2
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         changeTheme()
@@ -22,7 +28,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var updateLabel: UILabel!
     @IBOutlet var cardButtons: [UIButton]!
     
-    lazy var game = Consantration(numberOfPairOfCards: (cardButtons.count+1)/2)
+    lazy var game = Consantration(numberOfPairOfCards: self.numberOfPairOfCards)
     
     
     @IBAction func selectedACard(_ sender: UIButton) {
