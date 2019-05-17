@@ -76,7 +76,7 @@ class ViewController: UIViewController {
         game.identifireForPanalty.removeAll()
     }
     
-    func selectTheme() -> [[String]:Int] {
+    func selectTheme() -> (emoji:[String],randomNo:Int) {
         var themes=Array<[String]>()
         let sport = ["🏊🏻‍","🏄🏻‍","🤽🏼‍","🚴🏻‍♀️","⛹🏻‍♀️","🚣🏻‍","🚵🏻‍","🤾🏻‍","🏊🏼‍","🚴🏻‍♂️","🚣🏼‍♂️","🤾🏼‍♂️",]
         themes.append(sport)
@@ -86,21 +86,14 @@ class ViewController: UIViewController {
         let animal = ["🦓","🦙","🦞","🐁","🐊","🐆","🐉","🐐","🐒","🐓","🐖","🐬","🐫","🐶","🐵","🦄","🦋"]
         themes.append(animal)
         let randomNo:Int = Int(arc4random_uniform(UInt32(themes.count)))
-        return [themes[randomNo]:randomNo]
+        return (themes[randomNo],randomNo)
     }
     func changeTheme() {
-        
-        
-        for (key, value) in selectTheme() {
-            emojiChoises=key
-            randomNoForTheme=value
-        }
-        
+        let theme=selectTheme()
+        emojiChoises=theme.emoji
+        randomNoForTheme=theme.randomNo
     }
     
     @IBOutlet weak var scoreLabel: UILabel!
-    
-    //...............................//
-    //...............................//
-    
+
 }
