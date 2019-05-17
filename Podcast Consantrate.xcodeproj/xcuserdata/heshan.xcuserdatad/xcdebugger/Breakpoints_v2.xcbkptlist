@@ -9,13 +9,77 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Podcast Consantrate/ViewController.swift"
-            timestampString = "579492027.146329"
+            filePath = "Podcast Consantrate/Consantrate.swift"
+            timestampString = "579758310.07154"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "selectedACard(_:)"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "chooseCard(at:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Podcast Consantrate/ViewController.swift"
+            timestampString = "579717684.86884"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Podcast Consantrate/ViewController.swift"
+            timestampString = "579717684.8689049"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "emoji(for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Podcast Consantrate/ViewController.swift"
+            timestampString = "579717684.868961"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "selectTheme()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Podcast Consantrate/ViewController.swift"
+            timestampString = "579717684.869015"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "emoji(for:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,11 +90,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Podcast Consantrate/Consantrate.swift"
-            timestampString = "579487764.764383"
+            timestampString = "579758310.072126"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "checkPanalty(for:and:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Podcast Consantrate/Consantrate.swift"
+            timestampString = "579758310.072468"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "chooseCard(at:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,137 +122,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Podcast Consantrate/ViewController.swift"
-            timestampString = "579492027.1469671"
+            timestampString = "579717684.8701791"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "ViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Podcast_Consantrate.ViewController.emoji.getter : Swift.Dictionary&lt;Swift.Int, Swift.String&gt;"
-                  moduleName = "Podcast Consantrate"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/heshan/Developer/Podcast%20Consantrate/Podcast%20Consantrate/ViewController.swift"
-                  timestampString = "579491000.252835"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "55"
-                  endingLineNumber = "55"
-                  offsetFromSymbolStart = "114">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Podcast_Consantrate.ViewController.emoji.setter : Swift.Dictionary&lt;Swift.Int, Swift.String&gt;"
-                  moduleName = "Podcast Consantrate"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/heshan/Developer/Podcast%20Consantrate/Podcast%20Consantrate/ViewController.swift"
-                  timestampString = "579491000.255283"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "55"
-                  endingLineNumber = "55"
-                  offsetFromSymbolStart = "128">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Podcast_Consantrate.ViewController.emoji.modify : Swift.Dictionary&lt;Swift.Int, Swift.String&gt;"
-                  moduleName = "Podcast Consantrate"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/heshan/Developer/Podcast%20Consantrate/Podcast%20Consantrate/ViewController.swift"
-                  timestampString = "579491000.2578011"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "18">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Podcast_Consantrate.ViewController.emoji.modify : Swift.Dictionary&lt;Swift.Int, Swift.String&gt; with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "Podcast Consantrate"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/heshan/Developer/Podcast%20Consantrate/Podcast%20Consantrate/ViewController.swift"
-                  timestampString = "579491000.260426"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "55"
-                  endingLineNumber = "55"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Podcast_Consantrate.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Podcast_Consantrate.ViewController"
-                  moduleName = "Podcast Consantrate"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/heshan/Developer/Podcast%20Consantrate/Podcast%20Consantrate/ViewController.swift"
-                  timestampString = "579491000.262648"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "55"
-                  endingLineNumber = "55"
-                  offsetFromSymbolStart = "1107">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Podcast_Consantrate.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Podcast_Consantrate.ViewController&gt;"
-                  moduleName = "Podcast Consantrate"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/heshan/Developer/Podcast%20Consantrate/Podcast%20Consantrate/ViewController.swift"
-                  timestampString = "579491000.264972"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "55"
-                  endingLineNumber = "55"
-                  offsetFromSymbolStart = "1021">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Podcast Consantrate/ViewController.swift"
-            timestampString = "579492027.147072"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "emoji(for:)"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "updateUIfromModel()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Podcast Consantrate/ViewController.swift"
-            timestampString = "579492027.14714"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "flipCount"
-            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
