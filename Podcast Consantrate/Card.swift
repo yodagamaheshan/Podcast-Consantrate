@@ -14,9 +14,9 @@ struct Card {
     var involvedInAmismatch = false
     var identifire:Int
     //here we dont put emoji cause these models are UI independent so we dont put them
-    static var identifireFactory=0
+   private static var identifireFactory=0
     
-    static func getUniqueIdentifire()->Int{
+   private static func getUniqueIdentifire()->Int{
          identifireFactory += 1
         return identifireFactory
     }

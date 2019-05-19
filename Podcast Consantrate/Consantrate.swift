@@ -9,8 +9,8 @@
 import Foundation
 class Consantration{
     
-    var cards=[Card]()
-    var  indexOfOneAndOnlyFaceUpCards:Int?{
+   private(set) var cards=[Card]()
+   private var  indexOfOneAndOnlyFaceUpCards:Int?{
         //face up card ekk vitarak(only) tiyenm eke agaya return..nttn nil
         get{
             //mekedi default value eka nill nisa(optional vala)index ekk dunne nattn return krddi nil return wenne
@@ -34,10 +34,10 @@ class Consantration{
             }
         }
     }
-    var score = 0
-    var identifireForPanalty=[Int:Int]()
-    var flipCount=0
-    var date:Date?
+   private(set) var score = 0
+   private var identifireForPanalty=[Int:Int]()
+   private(set) var flipCount=0
+   private var date:Date?
     
     func chooseCard(at index:Int) {
        
@@ -75,7 +75,7 @@ class Consantration{
         cards.shuffle()
     }
     
-    func  insertForPanalty(identifire:Int) {
+   private func  insertForPanalty(identifire:Int) {
         //if whelue exist
         if let clickedValue=identifireForPanalty[identifire]{
             identifireForPanalty[identifire]=clickedValue+1
@@ -85,7 +85,7 @@ class Consantration{
         }
     }
     
-    func checkPanalty(for matchIndex:Int,and Index:Int){
+   private  func checkPanalty(for matchIndex:Int,and Index:Int){
         //check for before one
         if identifireForPanalty[matchIndex]!>1{
             score-=1

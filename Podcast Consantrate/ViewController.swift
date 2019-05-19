@@ -10,11 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var randomNoForTheme:Int=0
-    let backgroundColor=[#colorLiteral(red: 0.01680417731, green: 0.1983509958, blue: 1, alpha: 1),#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)]
-    let cardBackColor=[#colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1),#colorLiteral(red: 0.9994240403, green: 0.9855536819, blue: 0, alpha: 1),#colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 1)]
+   private var randomNoForTheme:Int=0
+   private let backgroundColor=[#colorLiteral(red: 0.01680417731, green: 0.1983509958, blue: 1, alpha: 1),#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)]
+   private let cardBackColor=[#colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1),#colorLiteral(red: 0.9994240403, green: 0.9855536819, blue: 0, alpha: 1),#colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 1)]
     
-    
+    //meke kohomath private(set) daanna deyak naha...
     var numberOfPairOfCards:Int{
         //get eka witharak thiyenawanam "get" qla daanna oonama na
         return (cardButtons.count+1)/2
@@ -25,8 +25,8 @@ class ViewController: UIViewController {
         updateUIfromModel()
     }
     
-    @IBOutlet weak var updateLabel: UILabel!
-    @IBOutlet var cardButtons: [UIButton]!
+    @IBOutlet private weak var updateLabel: UILabel!
+    @IBOutlet private var cardButtons: [UIButton]!
     
     lazy var game = Consantration(numberOfPairOfCards: self.numberOfPairOfCards)
     
@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func updateUIfromModel() {
+    private func updateUIfromModel() {
         
         for index in cardButtons.indices{
             let button=cardButtons[index]
@@ -58,10 +58,10 @@ class ViewController: UIViewController {
         view.backgroundColor=backgroundColor[randomNoForTheme]
         
     }
-    var emojiChoises=[String]()
-    var emoji=[Int:String]()
+   private var emojiChoises=[String]()
+   private var emoji=[Int:String]()
     
-    func emoji(for card:Card)->String {
+   private func emoji(for card:Card)->String {
         
         //dictionary eke e identifire ekta imoji ekk(value ekk) nattm saha imojiChoise eke thawa imoji ithuruwela thiye nm
         if emoji[card.identifire]==nil , emojiChoises.count>0{
@@ -82,7 +82,7 @@ class ViewController: UIViewController {
         game.identifireForPanalty.removeAll()
     }
     
-    func selectTheme() -> (emoji:[String],randomNo:Int) {
+   private func selectTheme() -> (emoji:[String],randomNo:Int) {
         var themes=Array<[String]>()
         let sport = ["🏊🏻‍","🏄🏻‍","🤽🏼‍","🚴🏻‍♀️","⛹🏻‍♀️","🚣🏻‍","🚵🏻‍","🤾🏻‍","🏊🏼‍","🚴🏻‍♂️","🚣🏼‍♂️","🤾🏼‍♂️",]
         themes.append(sport)
@@ -94,12 +94,12 @@ class ViewController: UIViewController {
         let randomNo:Int = Int(arc4random_uniform(UInt32(themes.count)))
         return (themes[randomNo],randomNo)
     }
-    func changeTheme() {
+   private func changeTheme() {
         let theme=selectTheme()
         emojiChoises=theme.emoji
         randomNoForTheme=theme.randomNo
     }
     
-    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet private weak var scoreLabel: UILabel!
 
 }
