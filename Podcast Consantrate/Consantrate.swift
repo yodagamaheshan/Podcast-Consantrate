@@ -34,10 +34,10 @@ class Consantration{
             }
         }
     }
-   private(set) var score = 0
-   private var identifireForPanalty=[Int:Int]()
-   private(set) var flipCount=0
-   private var date:Date?
+    var score = 0
+    var identifireForPanalty=[Int:Int]()
+    var flipCount=0
+    private var date:Date?
     
     func chooseCard(at index:Int) {
        

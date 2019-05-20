@@ -65,7 +65,8 @@ class ViewController: UIViewController {
         
         //dictionary eke e identifire ekta imoji ekk(value ekk) nattm saha imojiChoise eke thawa imoji ithuruwela thiye nm
         if emoji[card.identifire]==nil , emojiChoises.count>0{
-            let randomIndex=Int(arc4random_uniform(UInt32(emojiChoises.count)))
+            //Int walata extension ekk daala thiyenne
+            let randomIndex=emojiChoises.count.arc4random
             //card eke identifire ekata eka emoji ekk RANDOMwa himi wenawaa
             emoji[card.identifire]=emojiChoises.remove(at: randomIndex)
         }
@@ -102,4 +103,17 @@ class ViewController: UIViewController {
     
     @IBOutlet private weak var scoreLabel: UILabel!
 
+}
+extension Int{
+    var arc4random:Int{
+        if self>0{
+            return Int(arc4random_uniform(UInt32(self)))
+        }
+        else if self<0{
+            return -Int(arc4random_uniform(UInt32(abs(self))))
+        }
+        else{
+            return 0
+        }
+    }
 }
