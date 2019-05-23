@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Consantration{
+struct Consantration{
     
    private(set) var cards=[Card]()
    private var  indexOfOneAndOnlyFaceUpCards:Int?{
@@ -39,7 +39,7 @@ class Consantration{
     var flipCount=0
     private var date:Date?
     
-    func chooseCard(at index:Int) {
+    mutating func chooseCard(at index:Int) {
        
         flipCount+=1
         if !cards[index].isMatched{
@@ -75,7 +75,7 @@ class Consantration{
         cards.shuffle()
     }
     
-   private func  insertForPanalty(identifire:Int) {
+    private mutating func  insertForPanalty(identifire:Int) {
         //if whelue exist
         if let clickedValue=identifireForPanalty[identifire]{
             identifireForPanalty[identifire]=clickedValue+1
@@ -85,7 +85,7 @@ class Consantration{
         }
     }
     
-   private  func checkPanalty(for matchIndex:Int,and Index:Int){
+    private  mutating func checkPanalty(for matchIndex:Int,and Index:Int){
         //check for before one
         if identifireForPanalty[matchIndex]!>1{
             score-=1
