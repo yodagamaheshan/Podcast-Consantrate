@@ -59,18 +59,18 @@ class ViewController: UIViewController {
         
     }
    private var emojiChoises=[String]()
-   private var emoji=[Int:String]()
+   private var emoji=[Card:String]()
     
    private func emoji(for card:Card)->String {
         
         //dictionary eke e identifire ekta imoji ekk(value ekk) nattm saha imojiChoise eke thawa imoji ithuruwela thiye nm
-        if emoji[card.identifire]==nil , emojiChoises.count>0{
+        if emoji[card]==nil , emojiChoises.count>0{
             //Int walata extension ekk daala thiyenne
             let randomIndex=emojiChoises.count.arc4random
             //card eke identifire ekata eka emoji ekk RANDOMwa himi wenawaa
-            emoji[card.identifire]=emojiChoises.remove(at: randomIndex)
+            emoji[card]=emojiChoises.remove(at: randomIndex)
         }
-        return emoji[card.identifire] ?? "?"
+        return emoji[card] ?? "?"
     }
     
     @IBAction func reset() {
