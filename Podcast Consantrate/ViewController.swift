@@ -53,8 +53,13 @@ class ViewController: UIViewController {
                 button.setTitle("", for: UIControl.State.normal)
             }
         }
+        let attributes: [NSAttributedString.Key : Any]=[
+            NSAttributedString.Key.strokeColor : UIColor.orange ,
+            .strokeWidth : 5.0,
+        ]
+        let attributedText = NSAttributedString(string: "Filps : "+String(game.flipCount), attributes: attributes)
+        updateLabel.attributedText=attributedText
         scoreLabel.text="Score : "+String(game.score)
-        updateLabel.text="Filps : "+String(game.flipCount)
         view.backgroundColor=backgroundColor[randomNoForTheme]
         
     }
@@ -116,5 +121,7 @@ extension Int{
             return 0
         }
     }
+    
+    
     
 }

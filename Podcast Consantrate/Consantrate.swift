@@ -46,7 +46,7 @@ struct Consantration{
             //if 2nd another card choosed
             if let matchIndex=indexOfOneAndOnlyFaceUpCards , matchIndex != index{
                 //check if cards match
-                if cards[matchIndex].identifire == cards[index].identifire {
+                if cards[matchIndex] == cards[index] {
                     cards[matchIndex].isMatched=true
                     cards[index].isMatched=true
                     score+=2
